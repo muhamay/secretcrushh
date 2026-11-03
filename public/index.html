@@ -1,1 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090910">
+  <meta name="description" content="XATANIEL AI — asisten AI untuk membantu ide, belajar, dan berkarya.">
+  <title>XATANIEL AI — Your Intelligent Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">X</div>
+        <div><div class="brand-name">XATANIEL <span>AI</span></div><div class="brand-caption">INTELLIGENCE STUDIO</div></div>
+      </div>
+      <button class="new-chat" id="newChat"><span>＋</span> Chat baru</button>
+      <div class="side-label">RUANG KERJA</div>
+      <div class="history-list" id="historyList"></div>
+      <div class="sidebar-bottom">
+        <div class="status-dot"></div>
+        <div><strong>XATANIEL AI</strong><small>Personal AI assistant</small></div>
+        <span class="version">V1.0</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menuButton" aria-label="Buka menu">☰</button>
+        <div class="top-brand">XATANIEL <span>AI</span></div>
+        <div class="top-right"><span class="online-dot"></span><span>ONLINE</span></div>
+      </header>
+
+      <section class="conversation" id="conversation">
+        <div class="welcome" id="welcome">
+          <div class="orb-wrap"><div class="orb"><span>X</span></div></div>
+          <div class="eyebrow"><span></span> YOUR INTELLIGENT COMPANION</div>
+          <h1>Selamat datang di<br><span>XATANIEL AI.</span></h1>
+          <p>Tempat ide berkembang dan rasa ingin tahu menemukan jawaban.<br>Tanyakan apa saja, lalu mulai sesuatu yang hebat.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Bantu saya membuat rencana belajar yang efektif."><span>✦</span><b>Rencana belajar</b><small>Atur waktu dan target belajar</small></button>
+            <button class="suggestion" data-prompt="Berikan 5 ide proyek website untuk pemula."><span>⌘</span><b>Ide kreatif</b><small>Temukan inspirasi baru</small></button>
+            <button class="suggestion" data-prompt="Jelaskan kecerdasan buatan dengan bahasa sederhana."><span>◈</span><b>Belajar sesuatu</b><small>Pahami topik yang menarik</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <footer class="composer-area">
+        <form class="composer" id="chatForm">
+          <textarea id="messageInput" rows="1" maxlength="4000" placeholder="Kirim pesan ke XATANIEL AI..." aria-label="Tulis pesan"></textarea>
+          <button class="send-button" id="sendButton" type="submit" aria-label="Kirim pesan"><span>↑</span></button>
+        </form>
+        <div class="disclaimer">XATANIEL AI dapat membuat kesalahan. Periksa kembali informasi penting.</div>
+      </footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
 
